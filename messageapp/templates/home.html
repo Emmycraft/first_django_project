@@ -1,0 +1,32 @@
+{% comment %}
+<h1>message homepage</h1>
+<ul>
+    {% for message in object_list%}
+    <li>{{message}}
+    </li>
+    {% endfor%}
+</ul> {% endcomment %}
+<!--using the content created-->
+
+<h1>message app</h1>
+<ul>{% for message in all_content%}
+    <li>{{message}}
+
+    </li>
+    {% endfor%}
+</ul>
+<h6> ordered list obtained from the data stored in the admin interface</h6>
+<ol >
+
+{% for message in all_content %}
+
+
+
+<!-- each list item in the admin interface-->
+{# another method of accessing the class in the models#}
+<li  >{{message.text}}</li>
+
+
+{%endfor%}
+
+</lo>
